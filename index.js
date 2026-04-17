@@ -119,7 +119,6 @@ app.post("/api/profiles", async (req, res) => {
 
 // ── GET /api/profiles ──────────────────────────────────────────────
 app.get("/api/profiles", (req, res) => {
-//   let query = "SELECT * FROM profiles WHERE 1=1";
 let query = "SELECT id, name, gender, age, age_group, country_id FROM profiles WHERE 1=1";
   const params = [];
 
